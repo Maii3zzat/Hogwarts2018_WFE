@@ -1,0 +1,157 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  background: linear-gradient(rgba(0,0,0,0.35),
+                            rgba(0,0,0,0.35),
+                            rgba(0,0,0,0.35),
+                            rgba(0,0,0, 0.35)),
+                            url("images/Dobby3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position:relative;
+}
+@font-face {
+  font-family: HARRYP__;
+  src: url(images/HARRYP__.TTF);
+}
+
+#Logo {
+    border-radius: 100%;
+    opacity: 0.8;
+}
+.wrapper > *{
+    flex: 1 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-header{
+    justify-content: flex-start;
+    display: flex;
+}
+
+nav {
+    align-content: center;
+    margin-right: 280px;
+}
+nav ul {
+    list-style-type: none;
+    align-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: darkgray;
+    border-right: 2px solid gray;
+    margin-top: -6px;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+h1{
+
+    margin-left: -190px;
+    white-space:nowrap;
+    text-align: center;
+    align-content: center;
+    color: antiquewhite;
+    font-family: HARRYP__,cursive;
+}
+#header{
+    padding: 0px 200px 0px 206px;
+    position: fixed;
+    margin-left: -83px;
+    margin-right: 350px;
+    margin-bottom: 10px;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+}
+#header img {
+    float: left;
+    margin-top: -80px;
+    margin-left: -145px;
+    padding-right: 1180px;
+    margin-bottom: -100px;
+}
+ .footer{
+    display: block;
+    background: darkgray;
+    color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    background-color: #10122B;
+    opacity: 0.8;
+    position: sticky;
+    margin-bottom: -30px;
+}
+.footerText{
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    align-content: center;
+    line-height: 1.5;
+    position: relative;
+}
+.footerText a{
+    text-decoration: none;
+    display: block;
+    color: darkgray;
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 120px;
+}
+.block {
+    margin: 20px;
+}
+article {
+    opacity: 0.7;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.question p  {
+    font-size: 15px;
+    color: #D14E4E;
+    font-weight: 800;
+}
+
+h3 {
+    font-style: oblique;
+    font-weight:bolder;
+    font-size: 19px;
+    font-family: h;
+    color: #054D4B;
+}
+@media screen and (min-width: 768px){
+    nav ul {
+         display: flex;
+    }
+    nav li {
+        justify-content: center;
+        flex: 1 1 0;
+    }
+    .flex-container {
+        display: flex;
+        align-content: center;
+    }
+}

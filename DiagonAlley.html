@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <link type="text/css" rel="stylesheet" href="DiagonAlley.css"/>
+
+		 <title> Diagon Alley </title>
+	 </head>
+<body>
+<div class="wrapper">
+  <header class="header"> <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+    <img id="hogwarts" src="images\Logo2.png" alt="Hogwarts logo"/>
+
+       <div id = "navigation">
+           <strong> &nbsp; <a href = "index.html">Home</a> &nbsp; <a href ="about.html">Houses</a> &nbsp; <a href ="courses.html">Courses</a> &nbsp; <a href = "staff.html"> Staff</a> &nbsp; <a href = "facilities.html">Facilities</a> &nbsp;
+              <a href="help.html">Help</a> &nbsp; <a href="form.html">Enroll</a> <br></strong> </div></header>
+  <article class="main">
+
+  <h2>Welcome To Diagon Alley</h2>
+<div class="w3-container">
+
+<div id="Ollivanders"><img class="mySlides" src="images\Ollivanders.jpg"></div>
+<div id="QualityQuidditchSupplies"><img class="mySlides" src="images\QualityQuidditchSupplies.jpg"></div>
+<img class="mySlides" src="images\PotageCauldron.jpg">
+<div id="MadamMalkin"><img class="mySlides" src="images\MadamMalkins.jpg"></div>
+<img class="mySlides" src="images\BorginAndBurkes.jpg">
+<img class="mySlides" src="images\EeylopsOwlEmporium.jpg">
+<img class="mySlides" src="images\GringottsBank.jpg">
+<img class="mySlides" src="images\FlourishAndBlotts.jpg">
+<div id="Scribbulus"><img class="mySlides" src="images\Scribbulus.jpg"></div>
+<img class="mySlides" src="images\SlugAndJigglersApothecary.jpg">
+<div id="DervishAndBanges"><img class="mySlides" src="images\DervishAndBanges.jpg"></div>
+<img class="mySlides" src="images\WiseacresWizardingEquipment.jpg">
+<img class="mySlides" src="images\ObsucrusBooks.jpg">
+<img class="mySlides" src="images\TheMagicalMenagerie.jpg">
+<img class="mySlides" src="images\SugarPlums.jpg">
+<img class="mySlides" src="images\DiagonAlleyArtsClub.jpg">
+<img class="mySlides" src="images\TheLeakyCauldron.jpg">
+<img class="mySlides" src="images\WeasleysWizardsWheezes.jpg">
+
+
+<p class="shopDescription"> Ollivanders</p>
+<p class="shopDescription"> quidditch supplier</p>
+<p class="shopDescription"> potage cauldron</p>
+<p class="shopDescription"> madam malkins</p>
+<p class="shopDescription"> Borgin And Burkes</p>
+<p class="shopDescription"> Eeylops Owl Emporium</p>
+<p class="shopDescription"> Gringotts Bank</p>
+<p class="shopDescription"> Flourish And Blotts</p>
+<p class="shopDescription"> Scribbulus</p>
+<p class="shopDescription"> Slug And Jigglers Apothecary</p>
+<p class="shopDescription">Dervish and Banges</p>
+<p class="shopDescription"> Wiseacres Wizarding Equipment</p>
+<p class="shopDescription"> Obsucrus Books</p>
+<p class="shopDescription"> The Magical Menagerie</p>
+<p class="shopDescription"> Sugar Plums Sweet Shop</p>
+<p class="shopDescription"> Diagon Alley Arts Club</p>
+<p class="shopDescription"> The Leaky Cauldron: famous pub</p>
+<p class="shopDescription"> Weasley's Wizards Wheezes</p>
+
+<div class="onlybuttons">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1);plsDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1);plsDivs(+1)" >&#10095;</button>
+</div></div>
+
+<script>
+var textIndex= 1;
+shwDivs(textIndex);
+
+function plsDivs(z) {
+    shwDivs(textIndex += z);
+}
+
+function shwDivs(z) {
+    var j;
+    var y = document.getElementsByClassName("shopDescription");
+    if (z > y.length) {textIndex = 1}
+    if (z < 1) {textIndex= y.length} ;
+    for (j = 0; j < y.length; j++) {
+        y[j].style.display = "none";
+    }
+    y[textIndex-1].style.display = "block";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "inline-block";
+}
+</script>
+  </article>
+  <aside class="aside aside-1">  <div class="sidenav">
+    <a href= "index.html">Home</a><br>
+    <a href= "about.html">About</a><br>
+    <a href= "courses.html">Courses</a><br>
+    <a href= "staff.html">Staff</a><br>
+    <a href= "help.html">Help</a><br>
+    <button class="btn">Facilities </button><br>
+        <div id= "dropCont">
+    <a href = "bookstore.html">-Bookstore</a><br>
+    <a href = "DiagonAlley.html">-Diagon Alley</a><br>
+    <a href = "sport.html">-Sports</a><br>
+    </div>
+        <button class = "btn">Enroll</button>
+        <div id= "dropCont">
+            <a href = "sorting.html">-Sorting hat Quiz</a><br>
+        </div>
+
+    </div></aside>
+  <aside class="aside aside-2"><div id="RecommendedShops"><p>Recommended Shops</p>
+      <ul id="menu">
+  <li><a href="#Ollivanders"><span>Ollivander's</span>
+    </a></li>
+
+  <li><a href="#QualityQuidditchSupplies"><span>Quality Quidditch Supplies</span></a></li>
+  <li><a href="#Scribbulus"><span>Scribbulus</span></a></li>
+  <li><a href="#DervishAndBanges"><span>Dervish and Banges</span></a></li>
+  <li><a href="#MadamMalkin"><span>Madam Malkins</span></a></li>
+</ul>
+</div>
+  </aside>
+
+      <audio controls autoplay>
+<source src="images\DiagonAlleyTheme.mp3" type="audio/mpeg">
+      </audio>
+</body>
+<footer class="footer">
+
+     <p class = "footerText"><i>
+       About<br><br>Hogwarts school was founded in the 9th/10th century, located
+     in Scotland, Europe.<br> Students can go there using Hogwarts Express at Platform 9 &frac34;, King's Cross Station. <br>
+      The school gives children with magical abilities sufficient
+     training to enrich their magic.<br> The school accepts students from the age of 11
+     and the educating process continues until<br> the age of 18. Students get accepted
+     into the school using an owl post sent to them at age 11.<br> Students get sorted into
+     four different houses.<br><br><img id = "Logo" src = "images\copyrightccolbert_wk24%20(1).png"><a href = "mailto:Hogwarts.of.wizardry@gmail.com"><br>Hogwarts.of.wizardry@gmail.com</a></i>
+           Howagrts School &copy; Copyrights 2018 <br><br></p>
+</footer>
+</html>

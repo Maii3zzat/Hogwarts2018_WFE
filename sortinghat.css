@@ -1,0 +1,158 @@
+@font-face {
+    font-family: HARRYP__;
+    src: url(images/HARRYP__.TTF);
+}
+
+#after_submit{
+  visibility: hidden;
+}
+
+#hogwarts{
+  margin-top:-80px;
+}
+
+#header{
+  position:fixed;
+  top:10px;
+  background-color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.8;
+  width:100%;
+  z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: HARRYP__;
+    color:antiquewhite;
+
+
+}
+
+
+#navigation {
+
+  position: fixed;
+  top:70px;
+  left:50%;
+  margin-left:-50px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+
+}
+
+#navigation a:hover {
+    color: darkseagreen;
+}
+#navigation a {
+    color: darkgray;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px ;
+    border:1px solid;
+}
+
+
+body {
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0.65),
+                              rgba(0,0,0,0.65),
+                              rgba(0,0,0,0.65),
+                              rgba(34,36,37, 0.65)),
+                              url("images/sortinghat4.jpg");
+
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     position:relative;
+
+}
+
+
+#quiz{
+  margin-top: 200px;
+}
+
+
+
+
+
+
+
+}
+
+h2{
+  font-family: HARRYP__;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.w3-container{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  position: relative;
+  text-align: center;
+
+}
+
+.Qs{
+  background-color: black;
+  opacity:0.8;
+  display: block;
+  font-size:30px;
+  font-family: HARRYP__;
+  color:chocolate;
+}
+
+#mc{
+  display:inline-block;
+}
+
+#button{
+  margin-top:30px;
+  border-radius: 20%;
+  font-size: 20px;
+  font-family: cursive;
+  background-color: Gray;
+  color:antiquewhite;
+}
+
+#hogwartshouse{
+  text-align:center;
+  font-size:70px;
+  font-family: HARRYP__;
+  color:chocolate;
+  margin:30px;
+}
+
+
+
+.footer{
+    display: block;
+    background: darkgray;
+    color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    background-color: #10122B;
+    opacity: 0.8;
+    position: static;
+    margin-bottom: -30px;
+    margin-top: 30px;
+}
+.footerText{
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    align-content: center;
+    line-height: 1.5;
+    position: relative;
+}
+.footerText a{
+    text-decoration: none;
+    display: block;
+    color: darkgray;
+}

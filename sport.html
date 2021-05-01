@@ -1,0 +1,184 @@
+<html>
+   <head>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link type="text/css" rel="stylesheet" href="sport.css"/>
+
+   <title> Sports </title>
+ </head>
+<body>
+<div class="wrapper">
+<header class="header"> <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+  <img id="hogwarts" src="images\Logo2.png" alt="Hogwarts logo"/>
+
+     <div id = "navigation">
+         <strong> &nbsp; <a href = "index.html">Home</a> &nbsp; <a href ="about.html">Houses</a> &nbsp; <a href ="courses.html">Courses</a> &nbsp; <a href = "staff.html"> Staff</a> &nbsp; <a href = "facilities.html">Facilities</a> &nbsp;
+            <a href="help.html">Help</a> &nbsp; <a href="form.html">Enroll</a> <br></strong> </div></header>
+<article class="main">
+
+<h2>Activities</h2>
+<div class="w3-container">
+
+<img class="mySlides" src="images\QuidditchWorldCup.jpg">
+<img class="mySlides" src="images\WizardsChess.gif">
+<img class="mySlides" src="images\TriwizardCup.jpg">
+
+
+
+
+<p class="shopDescription"> Quidditch</p>
+<p class="shopDescription"> Wizard's Chess</p>
+<p class="shopDescription"> Triwizard Cup Tournament</p>
+
+
+<div class="onlybuttons">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1);plsDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1);plsDivs(+1)" >&#10095;</button>
+</div></div>
+
+<script>
+var textIndex= 1;
+shwDivs(textIndex);
+
+function plsDivs(z) {
+  shwDivs(textIndex += z);
+}
+
+function shwDivs(z) {
+  var j;
+  var y = document.getElementsByClassName("shopDescription");
+  if (z > y.length) {textIndex = 1}
+  if (z < 1) {textIndex= y.length} ;
+  for (j = 0; j < y.length; j++) {
+      y[j].style.display = "none";
+  }
+  y[textIndex-1].style.display = "block";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "inline-block";
+}
+
+
+var countDownDate1 = new Date("Oct 20, 2023 00:00:00").getTime();
+
+
+var p = setInterval(function() {
+
+
+    var now1 = new Date().getTime();
+
+
+    var distance = countDownDate1 - now1;
+
+
+    var years1=Math.floor(distance/(100))
+    var days1 = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours1 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes1 = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds1 = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+    document.getElementById("TriwizardTournament").innerHTML = days1 + "d " + hours1 + "h "
+    + minutes1 + "m " + seconds1 + "s ";
+
+
+    if (distance < 0) {
+        clearInterval(p);
+        document.getElementById("TriwizardTournament").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+
+var countDownDate = new Date("Aug 25, 2023 00:00:00").getTime();
+
+
+var g = setInterval(function() {
+
+
+    var now = new Date().getTime();
+
+
+    var distance = countDownDate - now;
+
+    var years=Math.floor(distance/(100))
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+    document.getElementById("QuidditchWorldCup").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(g);
+        document.getElementById("QuidditchWorldCup").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+
+
+</script>
+</article>
+<aside class="aside aside-1">  <div class="sidenav">
+  <a href= "index.html">Home</a><br>
+  <a href= "about.html">About</a><br>
+  <a href= "courses.html">Courses</a><br>
+  <a href= "staff.html">Staff</a><br>
+  <a href= "help.html">Help</a><br>
+  <button class="btn">Facilities </button><br>
+      <div id= "dropCont">
+  <a href = "bookstore.html">-Bookstore</a><br>
+  <a href = "DiagonAlley.html">-Diagon Alley</a><br>
+  <a href = "sport.html">-Sports</a><br>
+  </div>
+      <button class = "btn">Enroll</button>
+      <div id= "dropCont">
+          <a href = "sorting.html">-Sorting hat Quiz</a><br>
+      </div>
+
+  </div></aside>
+<aside class="aside aside-2">
+  <p>Quidditch World Cup<p id="QuidditchWorldCup"></p>
+  <p>Triwizard Tournament <p id="TriwizardTournament"></p>
+
+</aside>
+
+    <audio controls autoplay>
+<source src="images\QuidditchWorldCup.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+</body>
+
+<footer class="footer">
+
+     <p class = "footerText"><i>
+       About<br><br>Hogwarts school was founded in the 9th/10th century, located
+     in Scotland, Europe.<br> Students can go there using Hogwarts Express at Platform 9 &frac34;, King's Cross Station. <br>
+      The school gives children with magical abilities sufficient
+     training to enrich their magic.<br> The school accepts students from the age of 11
+     and the educating process continues until<br> the age of 18. Students get accepted
+     into the school using an owl post sent to them at age 11.<br> Students get sorted into
+     four different houses.<br><br><img id = "Logo" src = "images\copyrightccolbert_wk24%20(1).png"><a href = "mailto:Hogwarts.of.wizardry@gmail.com"><br>Hogwarts.of.wizardry@gmail.com</a></i>
+           Howagrts School &copy; Copyrights 2018 <br><br></p>
+</footer>
+
+</html>
